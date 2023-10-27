@@ -1,0 +1,72 @@
+/* note: thêm 	animation: modalFedeIn ease .5s; vào trong đối tượng cần @keyframes */
+/* mobile */
+
+@media only screen and (max-width: 46.1875em) {
+	#nav {
+		display: block; 
+	}
+	#nav li {
+		display: block;
+	}
+	#nav > li:first-child {
+		display: inline-block;
+	}
+	#nav .subnav {
+		position: initial;
+		background-color: #333;
+	}
+	#nav .subnav a {
+		color: #fff;
+		padding: 0 68px;
+	}
+	#header {
+		overflow: hidden; 
+	}
+	#header .seach-right {
+		display: none;
+	}
+	.seach-bar {
+		display: block;
+	}
+	#content .members-item {
+		width: 100%;
+	}
+	#content .members-item img { 
+		width: 60%;
+		height: 60%;	
+	}
+	#content .column {
+		width: 100%;
+		margin-top: 16px
+	}
+	.contact-content {
+		flex-direction: column;
+	}
+	.contact-form .column-hafl {
+		flex-direction: column;
+	}
+    .fullwidth {
+		width: 100%;
+	}
+	.contact-info { 
+		line-height: 2;
+	}
+}
+
+/* Tablet: width >= 740px and width < 1024px */
+@media only screen and (min-width: 46.25em) and (max-width: 63.9375em) {
+	 
+}
+/* Mobile & tablet: width < 1024px */
+@media only screen and (max-width: 63.9375em) {
+	#footer .socials-lits {
+		font-size: 42px;
+	}
+	#footer .socials-lits i {
+		padding: 0 6px;
+	}	
+	#footer .footer-content a {
+		padding: 12px 0;
+		display: inline-block;
+	}
+}

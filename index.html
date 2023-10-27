@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>W3.CSS</title>
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<link rel="stylesheet" href="assets/css/responsive.css" />
+
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+		/>
+	</head>
+	<body>
+		<div id="main">
+			<!-- header -->
+			<div id="header">
+				<ul id="nav">
+					<li><a href="#">Home</a></li>
+					<li><a href="#band">Band</a></li>
+					<li><a href="#tour">Tour</a></li>
+					<li><a href="#contact">Contact</a></li>
+					<li>
+						<a id='down' href="#">
+							More <i class="fa-sharp fa-solid fa-caret-down"></i>
+						</a>
+
+						<ul class="subnav">
+							<li><a href="#">Merchandise</a></li>
+							<li><a href="#">Extras</a></li>
+							<li><a href="#">Media</a></li>
+						</ul>
+					</li>
+				</ul>
+
+				<div class="seach-right">
+					<i class="fa-solid fa-magnifying-glass"></i>
+			    </div>
+				<div id="js-seach-bar" class="seach-bar">
+					<i class="fa-solid fa-bars"></i>
+				</div>
+			</div>
+			<!-- slider -->
+
+			<div id="slider">
+				<div class="text-content">
+					<h2 class="text-heading">New York</h2>
+					<div class="text-descroptions">
+						The atmosphere in New York is lorem ipsum.
+					</div>
+				</div>
+			</div>
+			<!-- content -->
+
+			<div id="content">
+				<!-- about-section -->
+				<div id="band" class="content-section">
+					<h2 class="section-heading">THE BAND</h2>
+					<p class="section-sub-heading">we love music</p>
+					<p class="about-text">
+						We have created a fictional band website. Lorem ipsum
+						dolor sit amet, consectetur adipiscing elit, sed do
+						eiusmod tempor incididunt ut labore et dolore magna
+						aliqua. Ut enim ad minim veniam, quis nostrud
+						exercitation ullamco laboris nisi ut aliquip ex ea
+						commodo consequat. Duis aute irure dolor in
+						reprehenderit in voluptate velit esse cillum dolore eu
+						fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+						non proident, sunt in culpa qui officia deserunt mollit
+						anim id est laborum consectetur adipiscing elit, sed do
+						eiusmod tempor incididunt ut labore et dolore magna
+						aliqua. Ut enim ad minim veniam, quis nostrud
+						exercitation ullamco laboris nisi ut aliquip ex ea
+						commodo consequat.
+					</p>
+					<!-- team  -->
+					<div class="row members-list">
+						<div class="members-item column column-third text-center">
+							<p class="members-neam">Neam</p>
+							<img
+								class="img"
+								src="./assets/img/bandmember.jpg"
+								alt=""
+							/>
+						</div>
+						<div class="members-item column column-third text-center">
+							<p class="members-neam">Neam</p>
+							<img
+								class="img"
+								src="./assets/img/bandmember.jpg"
+								alt=""
+							/>
+						</div>
+						<div class="members-item column column-third text-center">
+							<p class="members-neam">Neam</p>
+							<img
+								class="img"
+								src="./assets/img/bandmember.jpg"
+								alt=""
+							/>
+						</div>
+						<div class="class"></div>
+					</div>
+				</div>
+				<!-- tour-section -->
+				<div id="tour" class="tour-section">
+					<div class="content-section">
+						<h2 class="section-heading text-white">TOUR DATES</h2>
+						<p class="section-sub-heading text-white">
+							Remember to book your tickets!
+						</p>
+						<!-- tickets -->
+						<ul class="tickets-list">
+							<li>
+								September <span class="sold-out">sold-out</span>
+							</li>
+							<li>
+								October <span class="sold-out">sold-out</span>
+							</li>
+							<li>November <span class="quancity">3</span></li>
+						</ul>
+						<!-- places -->
+						<div class="row  ">
+							<!-- places 1 -->
+							<div class="column column-third">
+								<img
+									src="./assets/img/places 1.jpg"
+									alt=""
+									class="places-img"
+								/>
+								<div class="places-body">
+									<h3 class="places-heading">New York</h3>
+									<p class="places-time">Fri 27 Nov 2016</p>
+									<p class="places-desc">
+										Praesent tincidunt sed tellus ut rutrum
+										sed vitae justo.
+									</p>
+									<div>
+										<button class="places-buy-bnt js-buy-ticket fullwidth"
+										href=""
+										>Buy Tickets</button>
+									</div>
+									
+								</div>
+							</div>
+							<!-- places 2 -->
+							<div class="column column-third">
+								<img
+									src="./assets/img/places 2.jpg"
+									alt=""
+									class="places-img"
+								/>
+								<div class="places-body">
+									<h3 class="places-heading">Paris</h3>
+									<p class="places-time">Sat 28 Nov 2016</p>
+									<p class="places-desc">
+										Praesent tincidunt sed tellus ut rutrum
+										sed vitae justo.
+									</p>
+									<div><button class="places-buy-bnt js-buy-ticket fullwidth"
+										href=""
+										>Buy Tickets</button>
+									</div>
+								</div>
+							</div>
+							<!-- places 3 -->
+							<div class="column column-third">
+								<img
+									src="./assets/img/places 3.jpg"
+									alt=""
+									class="places-img"
+								/>
+								<div class="places-body">
+									<h3 class="places-heading">San Francisco</h3>
+									<p class="places-time">Sun 29 Nov 2016</p>
+									<p class="places-desc">
+										Praesent tincidunt sed tellus ut rutrum
+										sed vitae justo.
+									</p>
+									<div><button class="places-buy-bnt js-buy-ticket fullwidth"
+										href=""
+										>Buy Tickets</button>
+									</div>
+								</div>
+							
+								</div>
+								<div class="places-float"></div>
+							</div>
+						</div>
+					</div>
+					<!-- begin contact-section -->
+					<div id="contact" class="content-section">
+
+						<h2 class="section-heading">CONTACT</h2>
+						<p class="section-sub-heading">Fan? Drop a note!</p>
+
+						<div class="row contact-content">
+
+							<div class="column column-half contact-info">
+								<p><i class="fa-solid fa-location-dot"></i>Chicago, US</p>
+								<p><i class="fa-solid fa-phone"></i>Phone: <a href="tel:+00 151515"> +00 151515</a></p>
+								<p><i class="fa-solid fa-envelope"></i>Email: <a href="mailto:mail@mail.com">mail@mail.com</a>	</p>
+							</div>	
+
+							<div class="column column-half contact-form">
+								<form action="">
+									<div class="row">
+										<div class="column column-hafl">
+											<input type="text" name="" placeholder="Name" required id="" class="form-control">
+											<input type="text" name="" placeholder="Email" required id="" class="form-control">
+										</div>
+									</div>
+									<div class="row">
+										<div class="column column-full">
+											<input type="text" name="" placeholder="Message" required id="" class="form-control">
+										</div>
+
+									</div>
+ 									
+									<input class="form-submit-bnt fullwidth" type="submit" value="SEND">
+
+								</form>
+
+							</div>
+						</div>
+					</div>
+					<!-- end ontact-section -->
+					<div class="map-section">
+						<img src="./assets/img/map.jpg" alt="map">
+					</div>
+				</div>
+				
+			</div>
+			<!-- footer -->
+			<div id="footer">
+				<div class="socials-lits">
+					<a href=""><i class="fa-brands fa-square-facebook"></i></a>
+					<a href=""><i class="fa-brands fa-instagram"></i></a>
+					<a href=""><i class="fa-brands fa-youtube"></i></a>
+					<a href=""><i class="fa-brands fa-pinterest-p"></i></a>
+					<a href=""><i class="fa-brands fa-twitter"></i></a>
+					<a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+				</div>
+
+				<div class="footer-content">
+					<p class="copyright">Powered by <a href="https://www.w3schools.com/w3css/default.asp"> w3.css</a></p>
+				</div>
+			</div>	
+		</div>
+		<!-- modal -->
+		<div class="modal js-modal">
+
+			<div class="modal-container js-modal-container">
+				<!-- modal-header -->
+			
+				<div class="modal-close js-close-modal">
+					<i class="fa-solid fa-xmark"></i>
+				</div>
+				<header class="modal-header">
+					<i class="fa-sharp fa-solid fa-bag-shopping"></i>
+					Tickets
+				</header>
+
+				<!-- modal-body -->
+				<div class="modal-body">
+					<label class="modal-label" for=""> 
+						<i class="fa-solid fa-cart-arrow-down"></i>
+						Tickets, $15 per person
+					</label>
+					<input class="modal-input" placeholder="How many?" type="text">
+
+					<label class="modal-label" for="">
+						<i class="fa-solid fa-user"></i>
+						Send To</label>
+					<input class="modal-input" placeholder="Enter email" type="text">
+						
+					<buton id="buy-ticket">
+						Pay
+						<i class="fa-solid fa-check"></i>
+					</buton>
+				</div>
+				<!-- modal-footer -->
+				<footer class="modal-footer">
+					<p>Need<a href=" ">Help</a></p>
+				</footer>
+			</div>
+		</div>
+		<!-- add: thêm -->
+		<script>
+			const buyBtns = document.querySelectorAll('.js-buy-ticket');
+			const modal = document.querySelector('.js-modal');
+			const closeModal =document.querySelector('.js-close-modal');
+			const modalContainer = document.querySelector('.js-modal-container');
+            // style thêm 1 class có thuộc tính display: flex; vào đẻ hiện ra
+			function showModal () {
+				modal.classList.add('open');
+			}
+			function hideModal () {
+				modal.classList.remove('open');
+			}
+
+		for ( const buyBtn of buyBtns ) {
+			buyBtn.addEventListener( 'click',  showModal )
+		} 
+		    closeModal.addEventListener( 'click', hideModal )
+		    modal.addEventListener( 'click', hideModal )
+
+		// hiện tượng nổi bọt ngăn chặn ảnh hưởng của thằng con như thằng cha.
+			modalContainer.addEventListener( 'click', function( event ) {
+				event.stopPropagation();
+			})
+		</script>
+		<script>
+			// const seachBar = document.querySelector('.js-seach-bar');
+
+			var header = document.getElementById('header');
+			var seachBar = document.getElementById('js-seach-bar');
+			// lấy chiều cao hiện tại lưu vào biến.
+			var headerHeight = header.clientHeight;
+
+			//đóng/mở seach bar 
+		    seachBar.onclick = function() {
+				// console.log(header.clientHeight);
+				// lấy chiều cao của header
+				var isclosed = header.clientHeight === headerHeight;
+				if (isclosed) {
+					//click mở
+					header.style.height = 'auto';
+				}	else {
+					//click đóng
+					header.style.height = null;
+				}			
+			}
+			// tự đóng khi chọn menu
+			var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+			// console.log(menuItems)
+			for (var i = 0; i < menuItems.length; i++) {
+				var menuItem = menuItems[i]; 
+				menuItem.onclick = function(e) {
+				var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+					//click đóng
+					if(!isParentMenu) {
+					header.style.height = null;
+					} 
+					else {
+						e.preventDefault();
+					}
+				} 
+			}
+		</script>
+	</body>
+</html>
