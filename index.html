@@ -16,30 +16,32 @@
 	<body>
 		<div id="main">
 			<!-- header -->
-			<div id="header">
-				<ul id="nav">
-					<li><a href="#">Home</a></li>
-					<li><a href="#band">Band</a></li>
-					<li><a href="#tour">Tour</a></li>
-					<li><a href="#contact">Contact</a></li>
-					<li>
-						<a id='down' href="#">
-							More <i class="fa-sharp fa-solid fa-caret-down"></i>
-						</a>
-
-						<ul class="subnav">
-							<li><a href="#">Merchandise</a></li>
-							<li><a href="#">Extras</a></li>
-							<li><a href="#">Media</a></li>
-						</ul>
-					</li>
-				</ul>
-
-				<div class="seach-right">
-					<i class="fa-solid fa-magnifying-glass"></i>
-			    </div>
-				<div id="js-seach-bar" class="seach-bar">
-					<i class="fa-solid fa-bars"></i>
+			<div class="overlay">
+				<div id="header">
+					<ul id="nav">
+						<li><a href="#">Home</a></li>
+						<li><a href="#band">Band</a></li>
+						<li><a href="#tour">Tour</a></li>
+						<li><a href="#contact">Contact</a></li>
+						<li>
+							<a id='down' href="#">
+								More <i class="fa-sharp fa-solid fa-caret-down"></i>
+							</a>
+	
+							<ul class="subnav">
+								<li><a href="#">Merchandise</a></li>
+								<li><a href="#">Extras</a></li>
+								<li><a href="#">Media</a></li>
+							</ul>
+						</li>
+					</ul>
+	
+					<div class="seach-right">
+						<i class="fa-solid fa-magnifying-glass"></i>
+					</div>
+					<div id="js-seach-bar" class="seach-bar">
+						<i class="fa-solid fa-bars"></i>
+					</div>
 				</div>
 			</div>
 			<!-- slider -->
@@ -314,24 +316,35 @@
 		</script>
 		<script>
 			// const seachBar = document.querySelector('.js-seach-bar');
-
+			var overlay= document.querySelector('.overlay');
 			var header = document.getElementById('header');
 			var seachBar = document.getElementById('js-seach-bar');
 			// lấy chiều cao hiện tại lưu vào biến.
 			var headerHeight = header.clientHeight;
 
 			//đóng/mở seach bar 
-		    seachBar.onclick = function() {
+		    seachBar.onclick = function(event) {
+				event.stopPropagation()
+				console.log('click header');
 				// console.log(header.clientHeight);
 				// lấy chiều cao của header
 				var isclosed = header.clientHeight === headerHeight;
 				if (isclosed) {
 					//click mở
 					header.style.height = 'auto';
+					overlay.style.height = '100vh';
 				}	else {
 					//click đóng
 					header.style.height = null;
+					overlay.style.height = null;
 				}			
+			}
+
+			overlay.onclick = (event) => {
+				console.log('click overlay');
+
+				header.style.height = null;
+				overlay.style.height = null;
 			}
 			// tự đóng khi chọn menu
 			var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
@@ -339,6 +352,8 @@
 			for (var i = 0; i < menuItems.length; i++) {
 				var menuItem = menuItems[i]; 
 				menuItem.onclick = function(e) {
+				e.stopPropagation()
+
 				var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
 					//click đóng
 					if(!isParentMenu) {
